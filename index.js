@@ -73,7 +73,7 @@ route.delete('/product/:id',bodyParser.json(),(req, res) => {
    db.query(deleteQuery, [userId], (err) => {
       if (err) throw err;
       
-      res.sendStatus(200).json({msg:`Deleted user with prodcuctID ${userId}`});
+      res.sendStatus(200).json({msg:`ok`});
     })
   }); 
 
@@ -82,8 +82,8 @@ route.delete('/product/:id',bodyParser.json(),(req, res) => {
 
 
   
-  app.listen(3000, () => {
-    console.log('your app listening on port 3000!');
+  app.listen(4000, () => {
+    console.log('your app listening on port 4000!');
   });
 
 
