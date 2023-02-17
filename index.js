@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 // db
 const db = require('./config');
+//cors
+const cors=require('cors');
 // body-parser
 const bodyParser = require('body-parser');
 // port
